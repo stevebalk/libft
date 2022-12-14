@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:49:28 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/12 16:51:20 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/14 17:34:59 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(char *str)
 	int	len;
 
 	len = 0;
-	while(*str)
+	while (*str)
 	{
 		len++;
 		str++;

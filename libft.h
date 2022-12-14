@@ -6,15 +6,16 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:04:27 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/14 16:03:42 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/14 17:36:19 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
-#include <limits.h>
+# include	<stdlib.h>
+# include	<limits.h>
+# include	<stdio.h>
 
 int		ft_atoi(char *str);
 void	ft_bzero(void *s, size_t size);

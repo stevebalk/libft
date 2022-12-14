@@ -6,15 +6,15 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:43:56 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/12 16:48:56 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/14 17:32:53 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(unsigned char ch)
 {
 	if (ch >= 32 && ch <= 126)
-		{
-			return (1);
-		}
-		return (0);
+	{
+		return (1);
+	}
+	return (0);
 }
