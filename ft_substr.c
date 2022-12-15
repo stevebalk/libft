@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:55:18 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/14 16:08:32 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/15 17:37:52 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,14 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
+	char *new_str;
 
+	if (!s)
+		return (NULL);
+	new_str = malloc(sizeof(char) * (len + 1));
+	if (new_str == NULL)
+		return (NULL);
+	new_str = ft_memcpy(new_str, s + start, len);
+	new_str[len] = '\0';
+	return (new_str);
 }
