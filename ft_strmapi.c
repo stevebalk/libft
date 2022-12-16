@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: friendlyrobot <friendlyrobot@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:59:34 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/14 15:59:39 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/16 14:49:25 by friendlyrob      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strmapi(char const *s, char (*f)(unsigned
-int, char))
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	
 }
