@@ -3,18 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: friendlyrobot <friendlyrobot@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:16:05 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/14 17:32:47 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/17 15:01:01 by friendlyrob      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_idigit(unsigned char ch)
 {
-	if (ch >= '0' && ch <= '9')
-	{
-		return (1);
-	}
-	return (0);
+	return (ch >= '0' && ch <= '9');
 }

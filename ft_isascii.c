@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: friendlyrobot <friendlyrobot@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:29:05 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/14 17:28:43 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/17 14:53:51 by friendlyrob      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(unsigned char ch)
 {
-	if (ch >= 0 && ch <= 127)
-		return (1);
-	return (0);
+	return (ch >= 0 && ch <= 127);
 }
