@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:09:08 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/14 17:32:23 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/19 14:36:06 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(unsigned char ch)
 {
-	if ((ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'z')
-		|| (ch >= 'A' && ch <= 'Z'))
-	{
-		return (1);
-	}
-	return (0);
+	return (ft_alpha(ch) || ft_idigit(ch));
 }
