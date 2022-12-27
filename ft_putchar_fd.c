@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 16:00:48 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:40:18 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/27 16:11:18 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	
 }

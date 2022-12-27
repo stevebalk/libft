@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:55:18 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:41:18 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/27 16:13:04 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *new_str;
+	char	*new_str;
 
 	if (!s)
 		return (NULL);
