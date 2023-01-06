@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 16:02:27 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:40:28 by sbalk            ###   ########.fr       */
+/*   Updated: 2022/12/27 16:11:11 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	
 }

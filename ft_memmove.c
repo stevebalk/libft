@@ -6,13 +6,13 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 14:43:15 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/25 17:07:55 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/01/06 13:57:57 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*d;
 	const char	*s;
