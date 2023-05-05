@@ -6,11 +6,24 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 14:45:31 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/25 15:08:28 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/04 16:00:45 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strchr(const char *s, int c)
-{
+#include "libft.h"
 
+char	*ft_strchr(const char *s, int c)
+{
+	char	*p;
+
+	p = (char *) s;
+	while (*p)
+	{
+		if (*p == c)
+			return (p);
+		p++;
+	}
+	if (c == '\0')
+		return (p);
+	return (NULL);
 }

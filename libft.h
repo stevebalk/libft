@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
+/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:04:27 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:41:45 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/04 14:19:58 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		ft_alpha(unsigned char ch);
 int		ft_isascii(unsigned char ch);
 int		ft_idigit(unsigned char ch);
 int		ft_isprint(unsigned char ch);
-int		ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 int		ft_tolower(char ch);
 int		ft_toupper(char ch);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
@@ -41,5 +41,6 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 char	*ft_strdup(const char *s);
+char	*strrchr(const char *s, int c);
 
 #endif
