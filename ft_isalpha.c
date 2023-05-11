@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:16:03 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:36:16 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 12:54:35 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_alpha(unsigned char ch)
+int	ft_isalpha(int ch)
 {
 	return ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'));
 }

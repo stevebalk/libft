@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:29:05 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:36:36 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 12:55:44 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(unsigned char ch)
+int	ft_isascii(int ch)
 {
 	return (ch >= 0 && ch <= 127);
 }

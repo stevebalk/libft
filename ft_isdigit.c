@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:16:05 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:37:02 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 12:55:53 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_idigit(unsigned char ch)
+int	ft_idigit(int ch)
 {
 	return (ch >= '0' && ch <= '9');
 }

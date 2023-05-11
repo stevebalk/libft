@@ -6,13 +6,13 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 16:09:08 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:36:06 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 12:55:25 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(unsigned char ch)
+int	ft_isalnum(int ch)
 {
 	return (ft_alpha(ch) || ft_idigit(ch));
 }
