@@ -6,43 +6,37 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:57:03 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/04 13:39:45 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/10 19:50:49 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char const	*str;
-	char		*trimmmed_str;
-	size_t		i;
-	size_t		set_len;
-	size_t		string_len;
+	size_t	s1_len;
+	size_t	set_len;
+	char	*trimmed_str;
 
-	str = s1;
+	s1_len = ft_strlen(s1);
 	set_len = ft_strlen(set);
-	string_len = ft_strlen(str);
-	i = 0;
-	while (s1[i] == set[i])
+	while (s1_len > 0)
 	{
-		i++;
-		if (i == set_len)
-		{
-			str += set_len;
-			string_len -= set_len;
-		}
+		if (ft_strncmp(s1 + s1_len - set_len, set, set_len) != 0)
+			break ;
+		s1_len -= set_len;
 	}
-	i = 0;
-	while (s1[ft_strlen(s1) - set_len + i] == set[i])
+	while (s1_len > 0)
 	{
-		i++;
-		if (i == set_len)
-			string_len -= set_len;
+		if (ft_strncmp(s1, set, set_len) != 0)
+			break ;
+		s1 += set_len;
+		s1_len -= set_len;
 	}
-	trimmmed_str = malloc((string_len + 1) * sizeof(char));
-	if (trimmmed_str == NULL)
+	trimmed_str = malloc((s1_len + 1) * sizeof(char));
+	if (trimmed_str == NULL)
 		return (NULL);
-	ft_strlcpy(trimmmed_str, str, string_len + 1);
-	return (trimmmed_str);
+	ft_strlcpy(trimmed_str, s1, s1_len + 1);
+	return (trimmed_str);
 }
