@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 17:38:48 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/20 23:55:50 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 17:25:59 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

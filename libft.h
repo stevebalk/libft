@@ -6,15 +6,16 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:04:27 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/11 13:18:41 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 17:35:14 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include	<stdlib.h>
+# include	<stddef.h>
 # include	<limits.h>
+# include   <stdlib.h>
 
 // Part 1 - Libc functions
 
@@ -37,7 +38,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char*	strnstr(const char *big, const char *little, size_t len)
+char*	strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int ch);
 int		ft_toupper(int ch);

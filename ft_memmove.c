@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 14:43:15 by sbalk             #+#    #+#             */
-/*   Updated: 2023/01/06 13:57:57 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/11 17:25:33 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*d;
 	const char	*s;
-	int			i;
+	size_t		i;
 
-	d = (unsigned char *)dest;
-	s = (unsigned char *)src;
+	d = (char*)dest;
+	s = (const char*)src;
 	i = 0;
 	if (d < s)
 		while (i++ < n)
