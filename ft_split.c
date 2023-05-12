@@ -6,11 +6,19 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:58:32 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:40:34 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/12 17:37:05 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	**ft_split(char const *s, char c)
 {
+	char	**list;
+	size_t	string_count;
+	size_t	i;
 	
+	i = 0;
+	string_count = 0;
+	while ()
 }
