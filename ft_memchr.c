@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 17:38:48 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/11 17:25:59 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/12 12:19:45 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*src;
-	unsigned int		i;
+	unsigned char	*src;
+	size_t			i;
 
 	src = (unsigned char *)s;
 	i = 0;
-	while (i++ < n)
-		if (src[i] == c)
+	while (i < n)
+	{
+		if (src[i] == (unsigned char)c)
 			return ((void *)(src + i));
+		i++;
+	}
 	return (NULL);
 }

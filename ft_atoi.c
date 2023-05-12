@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 15:29:20 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:39:01 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/12 12:24:12 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,3 @@ int	ft_atoi(char *str)
 	}
 	return (nb * sign);
 }
-
-// #include <stdio.h>
-// #include <limits.h>
-// #include <stdlib.h>
-
-// int	main(void)
-// {
-// 	// int min_i = INT_MIN;
-// 	// int max_i = INT_MAX;
-// 	// int zero = 0;
-// 	char str[] = "    +451dasd56131";
-// 	printf("%d\n", ft_atoi(str));
-// 	printf("%d\n", atoi(str));
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 17:11:46 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/03 20:27:35 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/12 11:28:20 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*s;
 	size_t			i;
 
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	i = 0;

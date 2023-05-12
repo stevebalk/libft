@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 14:44:21 by sbalk             #+#    #+#             */
-/*   Updated: 2023/01/06 13:58:25 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/12 17:06:44 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*src;
-
+	
 	src = (unsigned char *)s;
 	while (n--)
 		*src++ = c;
-	return s;
+	return (s);
 }
