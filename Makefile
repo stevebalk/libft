@@ -1,6 +1,6 @@
 NAME = libft.a
 
-CC = cc
+CC = gcc
 CFLAGS = -Werror -Wall -Wextra
 RM = rm -f
 
@@ -30,9 +30,9 @@ SRCS = ft_bzero.c		\
 		ft_substr.c		\
 		ft_strjoin.c 	\
 		ft_strtrim.c	\
-		ft_itoa.c		
-#		ft_split.c		\
-		ft_strmapi.c	\
+		ft_itoa.c		\
+		ft_split.c		\
+#		ft_strmapi.c	\
 		ft_putchar_fd.c	\
 		ft_putstr_fd.c	\
 		ft_putendl_fd.c	\

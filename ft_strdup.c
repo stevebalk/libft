@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 16:03:52 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/25 15:08:14 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/10 20:22:28 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ char	*ft_strdup(const char *s)
 	new_str = malloc(sizeof(char) * len);
 	if (new_str == NULL)
 		return (NULL);
-	new_str = ft_memcpy(new_str, s, len);
+	ft_strlcpy(new_str, s, len);
 	return (new_str);
 }
