@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 17:04:56 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/11 17:35:26 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/15 15:56:01 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
-
-	if (count > UINT_MAX / size)
-		return (NULL);
-	p = malloc(count * size);
+	
+	if (size != 0)
+	{
+		if (count > UINT_MAX / size)
+			return (NULL);
+	}
+	p = (void*)malloc(count * size);
 	if (p == NULL)
 		return (NULL);
 	ft_bzero(p, count * size);

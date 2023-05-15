@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbalk <sbalk@student.fr>                   +#+  +:+       +#+        */
+/*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 14:45:31 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/04 16:00:45 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/15 17:33:17 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strchr(const char *s, int c)
 	p = (char *) s;
 	while (*p)
 	{
-		if (*p == c)
+		if (*p == (char) c)
 			return (p);
 		p++;
 	}
-	if (c == '\0')
+	if ((char) c == '\0')
 		return (p);
 	return (NULL);
 }

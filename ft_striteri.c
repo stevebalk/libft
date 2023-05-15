@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:59:59 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/27 16:15:29 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/15 11:06:39 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-
+	z 	qw  
 }
