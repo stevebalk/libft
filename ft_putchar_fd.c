@@ -6,11 +6,13 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 16:00:48 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/27 16:11:18 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/16 15:28:35 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_putchar_fd(char c, int fd)
 {
-	
+	write(fd, &c, 1);
 }

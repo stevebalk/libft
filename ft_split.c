@@ -6,11 +6,24 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:58:32 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/15 13:18:11 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/16 12:49:58 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static	void free_list(char **list, size_t size)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < size)
+	{
+		free(list[i]);
+		i++;
+	}
+	free(list);
+}
 
 char	**ft_split(char const *s, char c)
 {
@@ -47,7 +60,10 @@ char	**ft_split(char const *s, char c)
 		}
 		p = (char *) malloc((str_len + 1) * sizeof(char));
 		if (p == NULL)
+		{
+			free_list(list, i);
 			return (NULL);
+		}
 		ft_strlcpy(p, s - str_len, str_len + 1);
 		list[i] = p;
 		str_len = 0;

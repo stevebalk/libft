@@ -6,11 +6,17 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 16:01:26 by sbalk             #+#    #+#             */
-/*   Updated: 2022/12/19 14:37:56 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/16 15:32:06 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_putstr_fd(char *s, int fd)
 {
-	
+	while(*s)
+	{
+		ft_putchar_fd(*s, fd);
+		s++;
+	}
 }

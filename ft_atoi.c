@@ -6,11 +6,11 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 15:29:20 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/12 12:24:12 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/16 12:54:48 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	nb;
 	int	sign;
