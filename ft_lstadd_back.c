@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/14 16:02:27 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/16 19:33:27 by sbalk            ###   ########.fr       */
+/*   Created: 2023/05/16 18:57:37 by sbalk             #+#    #+#             */
+/*   Updated: 2023/05/16 20:14:45 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void ft_lstadd_back(t_list **lst, t_list *new)
 {
-	int	sign;
+	t_list *t;
 
-	sign = 1;
-	if (n < 0)
+	if (*lst)
 	{
-		ft_putchar_fd('-', fd);
-		sign = -1;
+		t = *lst;
+		while(t->next != NULL)
+			t = t->next;
+		t->next = new;
 	}
-	if (n / 10)
-	{
-		ft_putnbr_fd(n / 10 * sign, fd);
-	}
-	ft_putchar_fd(n % 10 * sign + '0', fd);
+	else
+		*lst = new;
 }
