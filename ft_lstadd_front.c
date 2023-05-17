@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 18:29:27 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/17 16:52:51 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:55:51 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = lst[0];
-	lst[0] = new;
+	new->next = *lst;
+	*lst = new;
 }
