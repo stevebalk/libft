@@ -6,15 +6,16 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:02:44 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/17 16:44:30 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:51:23 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//It's nessecary to use del on the return value of (*f) because it could return a malloced void pointer
+// It's nessecary to use del on the return value of (*f) 
+// because it could return a malloced void pointer
 
-t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_lst;
 	t_list	*new_node;
@@ -31,7 +32,7 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	new_node = new_lst;
 	lst = lst->next;
-	while(lst)
+	while (lst)
 	{
 		new_content = f(lst->content);
 		new_node->next = ft_lstnew(new_content);
@@ -44,5 +45,5 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_node = new_node->next;
 		lst = lst->next;
 	}
-	return(new_lst);
+	return (new_lst);
 }

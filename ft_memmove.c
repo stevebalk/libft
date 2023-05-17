@@ -6,7 +6,7 @@
 /*   By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 14:43:15 by sbalk             #+#    #+#             */
-/*   Updated: 2023/05/12 17:06:38 by sbalk            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:49:38 by sbalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char		*d;
 	const char	*s;
 	size_t		i;
-	
+
 	if (dest == NULL && src == NULL)
 		return (NULL);
 	d = (char *)dest;
