@@ -64,8 +64,7 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re:
-	fclean all
+re: fclean all
 
 bonus: $(BONUS_OBJS)
 	ar rcs $(NAME) $(BONUS_OBJS)
