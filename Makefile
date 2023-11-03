@@ -6,7 +6,7 @@
 #    By: sbalk <sbalk@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/23 14:55:08 by sbalk             #+#    #+#              #
-#    Updated: 2023/05/23 14:55:23 by sbalk            ###   ########.fr        #
+#    Updated: 2023/11/03 01:59:42 by sbalk            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ NAME = libft.a
 CC = gcc
 CFLAGS = -Werror -Wall -Wextra
 RM = rm -f
+AR = ar rcs
 
 SRCS = ft_bzero.c			\
 		ft_memcpy.c			\
@@ -79,7 +80,7 @@ fclean: clean
 re: fclean all
 
 bonus: $(BONUS_OBJS)
-	ar rcs $(NAME) $(BONUS_OBJS)
+	$(AR) $(NAME) $(BONUS_OBJS)
 
 .PHONY: all clean fclean re bonus
 
