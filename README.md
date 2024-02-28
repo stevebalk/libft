@@ -23,22 +23,22 @@ The library should be error and leak free, because we use it in most other proje
 
 ### What's inside?
 
-## Convert functions
+# Convert functions
 
 Example: ft_itoa, ft_atoi
 
-## Check function
+# Check function
 
 Example: ft_isalnum, ft_isalpha
 
-## Memory functions
+# Memory functions
 
 Example: ft_calloc, ft_memcpy
 
-## String functions
+# String functions
 
 Example: ft_strlcat, ft_strlcpy
 
-## Linked list functions
+# Linked list functions
 
 Example: ft_lstnew, ft_lstclear
